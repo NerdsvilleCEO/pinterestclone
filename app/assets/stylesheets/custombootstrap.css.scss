@@ -1,11 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
-$body-bg: #95a5a6;
+$body-bg: #ecf0f1;
 $font-family-sans-serif: 'Lato', sans-serif;
 $navbar-height: 45px;
-$navbar-default-bg: #2980b9;
-$navbar-default-link-color: #fff;
-$jumbotron-bg: #ecf0f1;
+$navbar-default-bg: #fff;
+$navbar-default-link-color: #c0392b;
+$jumbotron-bg: #fff;
+$btn-primary-bg: #c0392b;
 @import 'bootstrap';
 
 .center{
