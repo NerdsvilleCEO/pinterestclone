@@ -12,6 +12,7 @@ gem 'bootstrap-sass'
 
 gem 'devise', '~> 3.5.1'
 
+
 group :production do
   gem 'pg'
 end
@@ -22,5 +23,6 @@ group :development, :test do
   gem 'spring'
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.0'
+  gem 'capybara'
 end
 
