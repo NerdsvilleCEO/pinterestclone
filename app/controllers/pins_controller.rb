@@ -9,7 +9,7 @@ class PinsController < ApplicationController
    Show all pins for current user
   """
   def index
-  	@pins = Pin.all
+  	@pins = Pin.all.each_slice(3).to_a
   end
 
   """
