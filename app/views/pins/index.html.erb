@@ -1,0 +1,6 @@
+<h2>Pins</h2>
+<% @pins.each do |pin| %>
+  <%= pin.description %>
+<% end %>
+
+<%= link_to 'Create a new Pin', new_pin_path, class: "btn btn-primary" %>
