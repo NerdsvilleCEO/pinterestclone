@@ -4,6 +4,7 @@ RSpec.describe Pin, type: :model do
   before { @pin = Pin.new(description: "Test") }
   subject { @pin }
   it { should respond_to :description }
+  it { should respond_to :user_id }
 
   describe "when content is empty" do
     before { @pin.description = nil }
