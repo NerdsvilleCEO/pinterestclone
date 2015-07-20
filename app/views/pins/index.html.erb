@@ -1,6 +1,19 @@
 <h2>Pins</h2>
-<% @pins.each do |pin| %>
-  <%= pin.description %>
-<% end %>
-
+<div class="card-grid">
+	<% @pins.each do |pin| %>
+	  <div class="col-md-4">
+		  <div class="card panel">
+		      <div class="panel-heading">
+				  <% if pin.user == current_user %>
+				    <%= link_to 'Destroy', pin, method: :delete, data: {confirm: "Are you sure?"}  %>
+				  <% end %>
+			  </div>
+			  <div class="panel-body">
+			    <p><%= image_tag pin.image.url(:medium) %></p>
+			  	<p><%= pin.description %></p>
+			  </div>
+		  </div>
+	  </div>
+	<% end %>
+</div>
 <%= link_to 'Create a new Pin', new_pin_path, class: "btn btn-primary" %>
