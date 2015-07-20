@@ -11,8 +11,8 @@
 					  <% end %>
 				  </div>
 				  <div class="panel-body">
-				    <p><%= image_tag card.image.url(:medium) %></p>
-				  	<p><%= card.description %></p>
+				    <p><%= image_tag card.image.url(:medium), style: "max-width:100%" %></p>
+				  	<p style="word-wrap: break-word"><%= card.description %></p>
 				  </div>
 			  </div>
 		  </div>
